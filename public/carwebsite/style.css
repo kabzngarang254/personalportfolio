@@ -1,0 +1,449 @@
+/* font */
+@font-face {
+    font-family: 'ruso';
+    src: url(fonts/Russo_One.zip);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background: url(img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: "ruso";
+    width: 100%;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+}
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+header nav{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    border-radius: 200px;
+    background-color: rgb(19, 19, 21);
+}
+header nav .logo{
+    width: 150px;
+    margin-left: 5%;
+}
+header nav .menu{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+nav .menu a{
+    color: #fff;
+    margin-left: 30px;
+    padding: 20px;
+    position: relative;
+}
+nav .menu  a::after{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 4px;
+    background-color: red;
+    transition: 2s;
+    cursor:pointer;
+}
+nav .menu  a:hover:after{
+    width: 100%;
+}
+nav .social a i{
+    color: #fff;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 1.7s;
+}
+nav .social a i:hover{
+    transform: scale(2);
+    color: #dd0707;
+}
+.hero{
+    width: 100%;
+    height: 100%;
+    margin-top: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+.hero .text{
+    width: 90%;
+    margin: auto;
+}
+.hero .text strong{
+    color: white;
+}
+.hero .text h4{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.hero .text h1{
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+.hero .text h1 span{
+    color: #dd0707;
+    font-size: 80px;
+    font-weight: bold;
+}
+.hero .text p{
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+.hero .text h2{
+    color: #fff;
+}
+.hero .text .btn{
+    padding: 10px 30px;
+    background-color: #dd0707;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid #dd0707;
+    transition: 0.3s;
+}
+.hero .text .btn:hover{
+    background-color: transparent;
+}
+
+.form{
+    width: 600px;
+    height: 700px;
+    position: fixed;
+    margin: 0 auto;
+    top: 150px;
+    background: rgba(32,31, 31 );
+    border-radius: 30px;
+    text-align: center;
+}
+.box select{
+    padding: 10px;
+    width: 70%;
+}
+.box input{
+    width: 75%;
+    margin: 10px;
+    margin-top: 18px;
+    margin-left: 21px;
+    padding: 13px 18px;
+    border-radius: 20px;
+}
+.box h1{
+    color: red;
+}
+
+
+.link button{
+    padding: 1px;
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    width: 150px;
+    margin: auto 0;
+    border-radius: 30px;
+}
+
+
+.link a{
+    text-decoration: none;
+    color: rgb(121, 58, 121);
+    font-size: 15px;
+}
+
+.link{
+    width: 50%;
+    text-align: center;
+    margin-top: 10px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 7px;
+    margin: 0 auto;
+}
+
+.link a{
+    text-decoration: none;
+    color: white
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
+.contact{
+    position: relative;
+    min-height: 40vh;
+    padding: 0px;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.contact .content1{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content1 h2{
+    font-size: 40px;
+    font-weight: 500;
+
+}
+.contact .content1 p{
+    font-weight: 300;
+
+}
+.content1 h1{
+    color: red;
+}
+.container1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.container1 .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container1 .contactinfo .box1{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container1 .contactinfo .box1 .icon{
+    width: 80px;
+    height: 60px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 32px;
+}
+.container1 .contactinfo .box1 .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container1 .contactinfo .box1 .text h3{
+    font-weight: 800px;
+    color: red;
+}
+.contactform{
+    width: 100%;
+    padding: 40px;
+    background: white;
+    border-radius: 30px;
+}
+.contactform h2{
+    font-size: 30px;
+    color: red;
+    font-weight: 500;
+    width: 500px;
+    margin-left: 3px;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.contactform .inputbox span
+{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span
+{
+    color: red;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]
+{
+    width: 100px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.about{
+    width: 70%;
+}
+.about img{
+    height: 600px;
+    width: 500px;
+    margin-left: -10%;
+}
+.about-text{
+    width: 600px;
+}
+.main{
+    width: 1200px;
+    max-width: 100%;
+    margin:  auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin-top: 30px;
+}
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: -10px;
+}
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+span{
+    color: red;
+}
+.about-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 25px;
+    margin-bottom: 45px;
+    animation: 4s ease-in;
+
+}
+button{
+    background: red;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bolder;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background: transparent;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 150%;
+}
+.container2 img{
+    width: 350px;
+    height: 250px;
+    display: flex;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 1.3s ease-out ;
+    padding: 20px;
+}
+@media (max-width:600px){
+    .container2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 150%;
+    }
+}
+.container2 img:hover{
+    filter:(1);
+    transform: scale(1.1);
+}
+.container2 :hover{
+    opacity: 1.4;
+}
+
+.content2{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 2;
+    transition: 1.6s ease-in-out;
+    cursor: pointer;
+    color: aqua;
+}
+
+
+.content2{
+    color: white;
+    font-size: 10px;
+}
+.content2 h2 a{
+    color: aqua;
+}
+footer {
+    background-color: rgb(146, 22, 22);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .social{
+    margin-right: 5%;
+  }

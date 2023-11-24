@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="shortcut icon" href="favicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <title>JKNSHOP</title>
+</head>
+
+<body class="font-sans">
+    <nav class="bg-gray-100 p-5 flex justify-between items-center sticky top-0 z-50">
+        <div class="logo text-2xl font-bold">
+            <h1>JKN Shops</h1>
+        </div>
+        <ul class="hidden md:flex space-x-4">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+        </ul>
+
+        <!-- for responsive btn -->
+        <div class="menu-btn md:hidden">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </nav>
+
+    <!-- section -->
+    <section class="content bg-cover bg-center bg-no-repeat" style="background-image: url(shopping.jpeg);">
+        <div class="p-5 md:w-1/2 text-white">
+            <h1 class="text-4xl font-bold">New Arrivals For Men, Women, and Children</h1>
+            <p class="text-xl mt-4">Get The Best Women Fashion Arrivals</p>
+            <button class="mt-6 px-8 py-4 bg-red-600 text-white text-lg font-semibold rounded-md">Shop Now</button>
+        </div>
+    </section>
+
+    <h1 class="pheading text-center my-10 text-4xl">Our Latest Products</h1>
+
+    <section class="sec p-5">
+        <div class="products grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+            <!-- card start -->
+            <div class="card bg-gray-100 rounded-md overflow-hidden shadow-md">
+                <div class="img"><img src="ladysandals.jpeg" alt=""></div>
+                <div class="desc text-gray-700">Women</div>
+                <div class="title text-xl font-bold text-gray-800">Lady Sandal</div>
+                <div class="box flex justify-between items-center p-4">
+                    <div class="price text-red-600 font-bold text-xl">$50</div>
+                    <button class="btn text-white bg-red-600 px-4 py-2 font-semibold rounded-full">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Repeat similar card structures for other products -->
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-100 h-20 flex items-center">
+        <p class="text-center w-full"><span class="text-red-600 font-bold"><a href="#">JKN Shops</a></span> - Copyright
+        </p>
+    </footer>
+
+    <!-- jQuery -->
+    <script>
+        $(".menu-btn").click(function () {
+            $(".navbar .menu").toggleClass("active");
+            $(".navbar i").toggleClass("active");
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <title>TEST FORM FILLING</title>
+    <style>
+        form{
+            width: 500px;
+            margin-left: 690px;
+            border-radius: 30px;
+        }
+         form input[type=submit] {
+                color: white;
+                padding: 5px;
+                border-radius: 20px;
+                border: none;
+                width: 40%;
+                margin-left: 30%;
+                margin-top: 2%;
+            }
+            form input[type=text]{
+                padding: 10px;
+                border-bottom: 2px solid black;
+                width: 400px;
+            }
+            form input[type=number]{
+                padding: 10px;
+                   border-bottom: 2px solid black;
+            }
+              form select {
+                padding: 10px;
+                border-radius: 10px;
+                border: 1px solid black;
+                width: 50%;
+                margin-top: 2%;
+                margin-bottom: 2%;
+            }
+    </style>
+</head>
+<body class="bg-gradient-to-r from-blue-600 via-green-500 to-pink-600 "">
+    <form action="process.php" method="POST"  class="bg-white text-left font-sans-serif p-10 ">
+        <h1 class="text-center text-bold text-2xl">TEST FORM</h1>
+    <br>
+        <!-- content -->
+         <label for="fullname" >FULLNAME <br></label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your firstname" required>
+         <br>
+         <br>
+         <label for="email">EMAIL <br></label>
+            <input type="text" id="email" name="email" placeholder="Enter Your Email" required>
+         <br>
+         <br>
+         <label for="phonenumber">PHONE NUMBER <br></label>
+            <input type="phonenumber"  name="phonenumber" id="phonenumber" placeholder="Enter  Phone number">
+         <br>
+         <br>
+        <label for="age">AGE <br></label>
+            <input type="radio" name="age" id="age" value=">18"> >18 <br>
+            <input type="radio" name="age" 
+            id="age" value="18-35">  18-35 <br>
+            <input type="radio" name="age"
+            id="age" value="35+">  35+
+        <br>
+        <br>
+        <label for="education">Education <br></label>
+            <input type="checkbox" name="education" id="education" value="Highschool">Highschool <br>
+            <input type="checkbox" name="education" id="education" value="Some College">Some College <br>
+            <input type="checkbox" name="education" id="education" value="Associate's Degree">Associate's Degree <br>
+            <input type="checkbox" name="education" id="education" value="Bachelor's Degree">Bachelor's Degree
+        <br>
+        <br>
+        <label for="appointmentdate">Appointment Date <br></label>
+            <input type="date" name="appointmentdate" id="appointmentdate" required>
+        <br>
+        <br>
+        <label for="reason">Reason for Appointment <br></label>
+            <select name="reason" id="reason">
+                <br>
+                <option value="">Choose reason</option>
+                <option value="Attachment" name="reason" id="reason">Attachement</option>
+                <option value="Job Application" name="reason" id="reason">Job Application</option>
+            </select>
+
+        <br>
+        <br>
+        <label for="message">Message <br>
+            <input type="text"  placeholder="Enter a Message"
+            name="message" id="message">
+        </label>
+        <br>
+        <br>
+       <input class="bg-gradient-to-r from-blue-600 via-green-500 to-pink-600 " type="submit"  name="insert" value="Submit">
+        <br>
+        <br>
+        <br>
+        </form>
+</body>
+</html>
