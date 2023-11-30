@@ -10,31 +10,18 @@
     <style>
            @media (max-width: 768px) {
         /* Apply styles only when the screen width is 768 pixels or less */
-        .lg:w-full {
+        #nav{
             width: 100%; /* Make the navigation bar full width on small screens */
         }
-
-        .lg:flex {
-            display: none; /* Hide the large screen navigation links on small screens */
-        }
-
-        .lg:hidden {
-            display: flex; /* Display the menu icon on small screens */
-        }
-
-        .pl-52 {
-            padding-left: 10px; /* Adjust the left padding for the space on small screens */
-        }
-
         /* You may need to adjust the styles based on your specific design and preferences */
     }
     </style>
 </head>
 <body>
     <!-- navigation bar -->
-    <nav class="shadow-lg fixed top-0 z-10 bg-white w-full sm:w-7xl">
+    <nav id="nav" class="shadow-lg fixed top-0 z-10 bg-white w-full sm:w-7xl">
         <div class="container flex justify-between  py-20">
-            <h1 class="pl-20 font-bold lg:text-5xl sm:text-2xl"><span class="text-red-700">Kabz</span> Ngarang.</h1>
+            <h1 class="pl-20 font-bold lg:text-5xl sm:text-2xl sm:text-left"><span class="text-red-700">Kabz</span> Ngarang.</h1>
             <!-- links -->
 
             <div class=" hidden lg:flex sm:flex-row space-x-40 pl-52 text-4xl font-bold ">
