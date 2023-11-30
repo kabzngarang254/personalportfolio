@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
+    <style>
+           @media (max-width: 768px) {
+        /* Apply styles only when the screen width is 768 pixels or less */
+        .lg:w-full {
+            width: 100%; /* Make the navigation bar full width on small screens */
+        }
+
+        .lg:flex {
+            display: none; /* Hide the large screen navigation links on small screens */
+        }
+
+        .lg:hidden {
+            display: flex; /* Display the menu icon on small screens */
+        }
+
+        .pl-52 {
+            padding-left: 10px; /* Adjust the left padding for the space on small screens */
+        }
+
+        /* You may need to adjust the styles based on your specific design and preferences */
+    }
+    </style>
 </head>
 <body>
     <!-- navigation bar -->
